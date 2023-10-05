@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Interview Questions: Manipulating API Response and Dropdown Behavior
 
-## Getting Started
+This repository contains solutions to two React interview questions related to manipulating API responses and implementing a dropdown to dynamically update another dropdown.
 
-First, run the development server:
+## Solution 1: Manipulating API Response
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Objective:
+Display user information obtained from an API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Steps:
+1. Create a React component `Page`.
+2. Use the `useState` and `useEffect` hooks to fetch data from the API.
+3. Display the retrieved user information in a visually appealing format.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Solution 2: Implementing Dynamic Dropdowns
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Objective:
+Create a dropdown for selecting a country and dynamically populate another dropdown with cities based on the selected country.
 
-## Learn More
+### Steps:
+1. Create a React component `Page`.
+2. Use the `useState` hook to manage the selected country.
+3. Implement event handling to update the selected country.
+4. Use conditional rendering to display the cities dropdown based on the selected country.
+5. Update the cities dropdown dynamically based on the selected country.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Solution 1:
+1. Open `Page.js`.
+2. Import the component in your application.
+3. Use `<Page />` within your desired component to display the user information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Solution 2:
+1. Open `Page.js`.
+2. Import the component in your application.
+3. Use `<Page />` within your desired component to display the country and city dropdowns.
 
-## Deploy on Vercel
+### Note:
+Make sure to have the necessary dependencies installed, such as React and any additional libraries used in the components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore the code in the respective files for a more detailed understanding of the implementations.
